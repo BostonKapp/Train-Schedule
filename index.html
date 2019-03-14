@@ -5,14 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Train Schedule</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="train.css">
+    <script src="train.js"></script>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
 <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
 
 </head>
 <body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Anytime is Train Time</h1>
+          <p class="lead">Choo Choo. Chee Chee.</p>
+        </div>
+      </div>
+
+
+      <!-- Current Train Schedule -->
+
+
+
+
+
+
+      <!-- Add Train -->
+      <div class="card">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Train Name</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Destination</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput3">First Train Time (HH:mm - military time)</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput4">Frequency (min)</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div>
+              </form>
+              <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
     
+    
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+
+
+
 </body>
 </html>
