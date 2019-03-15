@@ -6,11 +6,25 @@
     <title>Train Schedule</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/train.css">
-    <script src="train.js"></script>
+    <script src="assets/javascript/train.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBf87E4zr1_e7bmnTrY4E5LQm9rY3B3nQE",
+    authDomain: "train-schedule-634c1.firebaseapp.com",
+    databaseURL: "https://train-schedule-634c1.firebaseio.com",
+    projectId: "train-schedule-634c1",
+    storageBucket: "train-schedule-634c1.appspot.com",
+    messagingSenderId: "513111606911"
+  };
+  firebase.initializeApp(config);
+</script>
 
 </head>
 <body>
@@ -61,20 +75,20 @@
               <!-- Entry Form -->
               <form>
                 <div class="form-group">
-                  <label for="employee-name-input">Employee Name</label>
-                  <input class="form-control" id="employee-name-input" placeholder="Jane Doe" type="text">
+                  <label for="train-name-input">Train Name</label>
+                  <input class="form-control" id="train-name-input" placeholder="" type="text">
                 </div>
                 <div class="form-group">
-                  <label for="role-input">Role</label>
-                  <input class="form-control" id="role-input" placeholder="CEO" type="text">
+                  <label for="destination-input">Destination</label>
+                  <input class="form-control" id="destination-input" placeholder="" type="text">
                 </div>
                 <div class="form-group">
-                  <label for="start-input">Start Date (MM/DD/YYYY)</label>
-                  <input class="form-control" id="start-input" placeholder="01/08/1989" type="text">
+                  <label for="frequency-input">First Train Time (HH:mm - military time)</label>
+                  <input class="form-control" id="frequency-input" placeholder="" type="time">
                 </div>
                 <div class="form-group">
-                  <label for="rate-input">Monthly Rate</label>
-                  <input class="form-control" id="rate-input" placeholder="200000" type="text">
+                  <label for="arrival-input">Frequency (min)</label>
+                  <input class="form-control" id="arrival-input" placeholder="" type="text">
                 </div>
                 <button class="btn btn-primary" id="add-train-btn" style="background-color: blue;">Submit</button>
               </form>
