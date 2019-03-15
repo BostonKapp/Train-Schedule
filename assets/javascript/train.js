@@ -11,4 +11,16 @@
   firebase.initializeApp(config);
 
   var database = firebase.database();
+
+
+
+  var trainName = "";
+  var destination = "";
+  var frequency = "";
+  var arrivalTime = "";
+  var minutesAway = "";
   
+
+
+
+

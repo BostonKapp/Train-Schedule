@@ -1,10 +1,14 @@
-h1{
-    color:black;
-}
 
-.class {
-    background: brown;
-    color: white;
+
+.display{
     text-align: center;
-    
+}
+.lead{
+    text-align: center;
+}
+.table{
+  
+}
+.card{
+ 
 }
